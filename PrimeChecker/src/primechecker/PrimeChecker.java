@@ -1,7 +1,9 @@
 package primechecker;
 
+import java.util.Arrays;
+
 public class PrimeChecker {
-    private String separator;
+    private final String separator;
 
     public PrimeChecker() {
         this.separator = " ";
@@ -18,16 +20,22 @@ public class PrimeChecker {
         if (input == null || input.isEmpty()) {
             return 0;
         }
-
+/*
         String[] numbers = input.split(separator);
         int count = 0;
+
 
         for (String number : numbers) {
             if (isNumeric(number) && isPrime(Integer.parseInt(number))) {
                 count++;
             }
         }
-        return count;
+*/
+        return(int) Arrays.stream(input.split(separator))
+                .filter(this::isNumeric)
+                .mapToInt(Integer::parseInt)
+                .filter(this::isPrime)
+                .count();
     }
 
     private boolean isPrime(int number) {
