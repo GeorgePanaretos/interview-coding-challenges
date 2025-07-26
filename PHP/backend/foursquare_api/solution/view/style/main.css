@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #051419;
+	/*IE10+*/
+	background-image: -ms-linear-gradient(left, #6086D1 0%, #23538a 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(left, #6086D1 0%, #23538a 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(left, #6086D1 0%, #23538a 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #6086D1), color-stop(100, #23538a));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(left, #6086D1 0%, #23538a 100%);
+	/* W3C Markup */ 
+	background-image: linear-gradient(to right, #6086D1 0%, #23538a 100%);
+}
+section{
+	margin: 50px;
+}
