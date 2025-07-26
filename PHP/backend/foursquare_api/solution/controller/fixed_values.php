@@ -1,6 +1,5 @@
 <?php
 
-define("CATEGORY_ID", "4bf58dd8d48988d11b941735");
 
 class Constants{
 
@@ -12,8 +11,6 @@ class Constants{
 	const CLIENT_SECRET = 'ISIT3PFVCZORCQA0J3YGFOJOQ1C3GUZPUDFUKL3LKGRR4O5N';
 
 	const RADIUS = 300;
-
-	const DATE = 20171010;
 
 	const LATITUDE = '48.168088,17.138037';
 
@@ -27,7 +24,7 @@ $client_secret = Constants::CLIENT_SECRET;
 
 $radius = Constants::RADIUS;
 
-$date = Constants:: DATE;
+$date = date('Ymd');
 
 $lat = Constants:: LATITUDE;
 
