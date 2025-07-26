@@ -14,7 +14,7 @@ Testing endpoint:
 
 ** Params explanation **
 
-* &categoryId = ID of the searching categories. Foursquare category tree url: https://developer.foursquare.com/categorytree . You can choose one of the following Bar, Beerarea, Winery, or something you would prefer
+* &categoryId = ID of the searching categories. Foursquare category tree url: https://docs.foursquare.com/data-products/docs/categories. You can choose one of the following Bar, Beerarea, Winery, or something you would prefer
 * &radius = Numeric value of distance in meters - could be in range of 0 - 2000
 * &client_id and &client_secret = Foursquare API needs credentials to create new app. You can use our testing values
 * &v = version in format YYYYMMDD
