@@ -1,6 +1,5 @@
 <?php
 
-define("CATEGORY_ID", "4bf58dd8d48988d11b941735");
 
 class Constants{
 
