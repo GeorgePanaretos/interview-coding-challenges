@@ -12,8 +12,6 @@ class Constants{
 
 	const RADIUS = 300;
 
-	const DATE = 20171010;
-
 	const LATITUDE = '48.168088,17.138037';
 
 
@@ -26,7 +24,7 @@ $client_secret = Constants::CLIENT_SECRET;
 
 $radius = Constants::RADIUS;
 
-$date = Constants:: DATE;
+$date = date('Ymd');
 
 $lat = Constants:: LATITUDE;
 
