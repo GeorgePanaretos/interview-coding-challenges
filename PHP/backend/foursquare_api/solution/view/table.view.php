@@ -1,4 +1,4 @@
-<h1>Category</h1>
+<h1>Suggestions for after work!</h1>
 	<div class="table-header">
 		<table cellpadding="0" cellspacing="0" border="0">
 			<thead>
@@ -17,10 +17,12 @@
 				require './controller/foursquare.php';
 				$counter = 0;
 				foreach ($foursquare->response->venues as $items) {
-					if($count < 7){
+					if($counter < 7){
 						echo "<tr>";
 						echo "<td>{$items->name}</td>";
-						echo "<td>{$items->location->address}</td>";
+						foreach ($items->categories as $value) {
+							echo "<td>{$value->name}</td>";
+						}
 						echo "<td>{$items->location->address}</td>";
 						echo "<td>{$items->location->distance}</td>";
 						echo "</tr>";

@@ -15,5 +15,5 @@ $info = json_decode($info);
 $timezone = $info->timezone;
 date_default_timezone_set($timezone);
 
-# Getting the Latitude from the API. 
+# Getting the current Latitude of the user from the API. 
 $latitude = $info->lat . "," . $info->lon;
